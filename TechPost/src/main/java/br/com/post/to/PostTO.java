@@ -6,19 +6,19 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class PostTO {
-
+	
 	private int codigo;
 	private String titulo;
-	private String coteudo;
+	private String conteudo;
 	private String imagem;
 	private Date dataNoticia;
 	
 
-	public PostTO(int codigo, String titulo, String coteudo, String imagem, Date dataNoticia) {
+	public PostTO(int codigo, String titulo, String conteudo, String imagem, Date dataNoticia) {
 		super();
 		this.codigo = codigo;
 		this.titulo = titulo;
-		this.coteudo = coteudo;
+		this.conteudo = conteudo;
 		this.imagem = imagem;
 		this.dataNoticia = dataNoticia;
 	}
@@ -50,12 +50,12 @@ public class PostTO {
 
 
 	public String getCoteudo() {
-		return coteudo;
+		return conteudo;
 	}
 
 
-	public void setCoteudo(String coteudo) {
-		this.coteudo = coteudo;
+	public void setConteudo(String conteudo) {
+		this.conteudo = conteudo;
 	}
 
 
@@ -77,7 +77,6 @@ public class PostTO {
 	public void setDataNoticia(Date dataNoticia) {
 		this.dataNoticia = dataNoticia;
 	}
-
 	
 	
 
